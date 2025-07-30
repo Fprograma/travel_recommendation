@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VisitE-World</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: black;
+            color: white;
+        }
+    
+        .nav-links a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    
+        .search-bar input {
+            padding: 5px;
+        }
+    
+        .search-bar button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .home {
+            background-image: url('https://cdn.pixabay.com/photo/2019/12/17/06/39/etretat-4700904_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            height: calc(100vh - 70px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 28px;
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+<!-- Navigation bar separate in 2 div -->
+<header>
+    <nav class="navbar">
+        <div class="logo">VisitE-World</div>
+        <div class="nav-links">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter keywords to search">
+            <button onclick="searchRecommendations()">Search</button>
+            <button onclick="resetResults()">Reset</button>
+        </div>
+    </nav>
+</header>
+
+<!-- Home page divided in 2 parts, text section and social icons inside-->
+<section class="home">
+    <div class="intro">
+        <h1>VisitE-World your wisdom traveller</h1>
+        <p>Visit amazing places and get unforgettable experiences in the world.</p>
+
+        <div class="social-icons">
+            <a href="#" title="Facebook">👥</a>
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="Instagram">🌅</a>
+            <a href="#" title="Youtube">🔴</a>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
